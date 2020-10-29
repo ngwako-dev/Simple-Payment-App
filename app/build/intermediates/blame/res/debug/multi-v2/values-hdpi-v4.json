@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/ngwako/AndroidStudioProjects/SimplePaymentApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+            "outputFile": "/home/ngwako/Simple-Payment-App/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
                     "source": "/home/ngwako/DemoAPP/caches/transforms-2/files-2.1/284a2a218f7f6f43d29c2ab8e18ab1ed/appcompat-1.2.0/res/values-hdpi-v4/values-hdpi-v4.xml",
