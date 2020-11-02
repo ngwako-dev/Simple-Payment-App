@@ -1203,6 +1203,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable customize
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1275,6 +1276,7 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
+id accountNumberEdit
 id action0
 id action_bar
 id action_bar_activity_content
@@ -1320,8 +1322,6 @@ id beginning
 id blocking
 id bottom
 id bounce
-id button
-id button2
 id buttonPanel
 id cancel_action
 id center
@@ -1358,6 +1358,7 @@ id direct
 id disableHome
 id disablePostScroll
 id disableScroll
+id disclaimerButton
 id disclaimerFragment
 id dragDown
 id dragEnd
@@ -1368,6 +1369,7 @@ id dragUp
 id easeIn
 id easeInOut
 id easeOut
+id editTextNumber4
 id edit_query
 id end
 id end_padder
@@ -1380,6 +1382,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id firstAccount
 id firstFragment
 id fixed
 id flip
@@ -1425,8 +1428,10 @@ id motion_base
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
+id myListview
 id myNavHostFragment
 id my_nav
+id nameTextview
 id nav_controller_view_tag
 id nav_host_fragment_container
 id navigation_header_container
@@ -1447,6 +1452,7 @@ id parentRelative
 id parent_matrix
 id path
 id pathRelative
+id payButton
 id payCompleteFragment
 id payFragment
 id peopleFragment
@@ -1482,6 +1488,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id secondAccount
 id select_dialog_listview
 id selected
 id shortcut
@@ -1528,6 +1535,12 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView2
+id textView3
+id textView4
+id textView5
+id textView6
+id textView7
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1554,6 +1567,7 @@ id unlabeled
 id up
 id useLogo
 id viewBalancesFragment
+id viewButton
 id view_offset_helper
 id visible
 id visible_removing_fragment_view_tag
@@ -1661,6 +1675,7 @@ layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation my_nav
+string Amount
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -1693,8 +1708,11 @@ string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_pattern
+string disclaimer
+string disclaimer_text
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string from_account_number
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string mtrl_chip_close_icon_content_description

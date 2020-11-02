@@ -24,12 +24,12 @@
         "source": "/home/ngwako/Simple-Payment-App/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/ngwako/Simple-Payment-App/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "/home/ngwako/Simple-Payment-App/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
-    },
-    {
         "merged": "/home/ngwako/Simple-Payment-App/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "/home/ngwako/Simple-Payment-App/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/ngwako/Simple-Payment-App/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/home/ngwako/Simple-Payment-App/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
         "merged": "/home/ngwako/Simple-Payment-App/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
@@ -72,12 +72,12 @@
         "source": "/home/ngwako/Simple-Payment-App/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_launcher_background.xml"
     },
     {
-        "merged": "/home/ngwako/Simple-Payment-App/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_launcher_background.png.flat",
-        "source": "/home/ngwako/Simple-Payment-App/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_launcher_background.png"
-    },
-    {
         "merged": "/home/ngwako/Simple-Payment-App/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "/home/ngwako/Simple-Payment-App/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/ngwako/Simple-Payment-App/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "/home/ngwako/Simple-Payment-App/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_launcher_background.png"
     },
     {
         "merged": "/home/ngwako/Simple-Payment-App/app/build/intermediates/res/merged/debug/layout_fragment_pay_complete.xml.flat",
@@ -96,12 +96,16 @@
         "source": "/home/ngwako/Simple-Payment-App/app/src/main/res/layout/fragment_pay.xml"
     },
     {
-        "merged": "/home/ngwako/Simple-Payment-App/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "/home/ngwako/Simple-Payment-App/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "/home/ngwako/Simple-Payment-App/app/build/intermediates/res/merged/debug/drawable_customize.xml.flat",
+        "source": "/home/ngwako/Simple-Payment-App/app/src/main/res/drawable/customize.xml"
     },
     {
         "merged": "/home/ngwako/Simple-Payment-App/app/build/intermediates/res/merged/debug/layout_fragment_home.xml.flat",
         "source": "/home/ngwako/Simple-Payment-App/app/src/main/res/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/home/ngwako/Simple-Payment-App/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/ngwako/Simple-Payment-App/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
         "merged": "/home/ngwako/Simple-Payment-App/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",

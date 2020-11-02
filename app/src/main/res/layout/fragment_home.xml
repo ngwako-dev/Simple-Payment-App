@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".firstFragment">
+    tools:context=".homeFragment">
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/viewButton"
         android:layout_width="wrap_content"
         android:layout_height="36dp"
         android:layout_gravity="center"
@@ -22,7 +22,7 @@
         android:configChanges="orientation|screenSize"/>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/payButton"
         android:layout_width="wrap_content"
         android:layout_height="36dp"
         android:layout_gravity="center"

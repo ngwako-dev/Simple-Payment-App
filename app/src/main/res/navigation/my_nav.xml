@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/firstFragment"
-        android:name="android.example.com.simplepaymentapp.firstFragment"
+        android:name="android.example.com.simplepaymentapp.homeFragment"
         android:label="fragment_first"
         tools:layout="@layout/fragment_home" >
         <action
