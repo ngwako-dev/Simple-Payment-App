@@ -42,6 +42,7 @@ class peopleFragment : Fragment() {
         val adapter =ArrayAdapter(requireContext(),android.R.layout.simple_list_item_1,listItems)
         listView.adapter=adapter
 
+
         listView.setOnItemClickListener{parent, view, position, id ->
 
 
