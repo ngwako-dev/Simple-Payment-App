@@ -3,12 +3,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".payCompleteFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PayCompleteFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/confirmationTextView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_marginTop="100dp"
+        android:layout_height="500dp" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="PayCompleteFragment"
+        app:titleTextColor="@color/light"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:textColor="@color/light"
+        android:background="@color/colorPrimary"
+        android:text="Done" />
 
 </FrameLayout>
