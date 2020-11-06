@@ -63,7 +63,7 @@ class PayFragment : Fragment(), View.OnClickListener{
                     val accountNumber=accountNumberEdit.text.toString()
                     val amount=amountEditText.text.toString()
 
-                    val bundle= bundleOf("sendName" to sendname,"accountNumber" to accountNumber,
+                    val bundle= bundleOf("sendname" to sendname,"accountNumber" to accountNumber,
                             "money" to amount)
 
                 navController.navigate(R.id.action_payFragment_to_payCompleteFragment,bundle)

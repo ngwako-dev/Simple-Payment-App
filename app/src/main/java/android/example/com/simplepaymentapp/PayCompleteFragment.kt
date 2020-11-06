@@ -12,15 +12,15 @@ import kotlin.properties.Delegates
 class PayCompleteFragment : Fragment() {
 
     private lateinit var sendname:String
-    private lateinit var accountNumber: Number
-    private var amount by Delegates.notNull<Double>()
+    private lateinit var accountNumber: String
+    private var amount by Delegates.notNull<String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         sendname= requireArguments().getString("sendname").toString()
-        accountNumber= requireArguments().getLong("accountNumber")
-        amount= requireArguments().getDouble("money")
+        accountNumber= requireArguments().getString("accountNumber").toString()
+        amount= requireArguments().getString("money").toString()
         }
 
 
@@ -34,7 +34,7 @@ class PayCompleteFragment : Fragment() {
 
 
 //    view.findViewById<TextView>(R.id.resultsTextview).text=results
-//    view.findViewById<Button>(R.id.nextButton).setOnClickListener(this)
+  //   view.findViewById<Button>(R.id.nextButton).setOnClickListener(this)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
