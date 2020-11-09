@@ -15,7 +15,7 @@
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
             app:title="People"
-            app:titleTextColor="@color/light"/>
+            app:titleTextColor="@color/light" />
         <!-- TODO: Update blank fragment layout -->
         <TextView
             android:layout_width="match_parent"

@@ -5,22 +5,26 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
 import kotlin.properties.Delegates
 
 
-class PayCompleteFragment : Fragment() {
+class PayCompleteFragment : Fragment(), View.OnClickListener {
 
-    private lateinit var sendname:String
-    private lateinit var accountNumber: Number
-    private var amount by Delegates.notNull<Double>()
+    private lateinit var sendName:String
+    private lateinit var accountNumber: String
+    private var amount by Delegates.notNull<String>()
+    private lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        sendname= requireArguments().getString("sendname").toString()
-        accountNumber= requireArguments().getLong("accountNumber")
-        amount= requireArguments().getDouble("money")
+        sendName= requireArguments().getString("sendName").toString()
+        accountNumber= requireArguments().getString("accountNumber").toString()
+        amount= requireArguments().getString("money").toString()
         }
 
 
@@ -32,20 +36,23 @@ class PayCompleteFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_pay_complete, container, false)
     }
 
-
-//    view.findViewById<TextView>(R.id.resultsTextview).text=results
-//    view.findViewById<Button>(R.id.nextButton).setOnClickListener(this)
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val money=amount
-        val sendname= sendname
-        val results= "Name: $sendname"
+        val sendName= sendName
+        val results= sendName
 
-
-        val confirmationMessage="Payment to"+"\n"+results+ "\n"+ "From account number"+
-        "\n"+accountNumber+"\n"+"Amount"+"\n"+money
+        val confirmationMessage="Payment to"+"\n"+results+ "\n" + "\n"+ "From account number"+
+        "\n"+accountNumber+ "\n" +"\n"+"Amount"+"\n"+money
 
         view.findViewById<TextView>(R.id.confirmationTextView).text=confirmationMessage
+        navController= Navigation.findNavController(view)
+        view.findViewById<Button>(R.id.doneButton).setOnClickListener(this)
+    }
+
+    override fun onClick(v: View?) {
+        when (v!!.id) {
+            R.id.doneButton -> navController.navigate(R.id.action_payCompleteFragment_to_firstFragment)
+        }
     }
 }

@@ -1200,6 +1200,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable arrow
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn_checkbox_checked_mtrl
@@ -1237,6 +1238,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable rounded_rectangular
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -1307,6 +1309,7 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_payCompleteFragment_to_firstFragment
 id action_payFragment_to_disclaimerFragment
 id action_payFragment_to_payCompleteFragment
 id action_peopleFragment_to_payFragment
@@ -1336,7 +1339,6 @@ id beginning
 id blocking
 id bottom
 id bounce
-id button
 id buttonPanel
 id cache_measures
 id cancel_action
@@ -1378,6 +1380,7 @@ id disablePostScroll
 id disableScroll
 id disclaimerButton
 id disclaimerFragment
+id doneButton
 id dragDown
 id dragEnd
 id dragLeft

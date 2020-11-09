@@ -19,12 +19,12 @@ class PayFragment : Fragment(), View.OnClickListener{
 
 
     private lateinit var navController: NavController
-    private lateinit var sendname:String
+    private lateinit var sendName:String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        sendname= requireArguments().getString("sendname").toString()
+        sendName= requireArguments().getString("sendName").toString()
     }
 
     override fun onCreateView(
@@ -35,16 +35,11 @@ class PayFragment : Fragment(), View.OnClickListener{
         return inflater.inflate(R.layout.fragment_pay, container, false)
     }
 
-
-
-
-
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-       val sendname= sendname
-        val results= "Name: $sendname"
+        val sendName= sendName
+        val results= sendName
         view.findViewById<TextView>(R.id.resultsTextview).text=results
         view.findViewById<Button>(R.id.nextButton).setOnClickListener(this)
 
@@ -63,14 +58,13 @@ class PayFragment : Fragment(), View.OnClickListener{
                     val accountNumber=accountNumberEdit.text.toString()
                     val amount=amountEditText.text.toString()
 
-                    val bundle= bundleOf("sendName" to sendname,"accountNumber" to accountNumber,
+                    val bundle= bundleOf("sendName" to sendName,"accountNumber" to accountNumber,
                             "money" to amount)
 
                 navController.navigate(R.id.action_payFragment_to_payCompleteFragment,bundle)
+           }
 
-                    Toast.makeText(this.context,"name"+bundle,Toast.LENGTH_LONG).show()
-        }
+       }
 
     }
-
-}}
+}

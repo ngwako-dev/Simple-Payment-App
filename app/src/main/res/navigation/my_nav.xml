@@ -56,7 +56,11 @@
         android:id="@+id/payCompleteFragment"
         android:name="android.example.com.simplepaymentapp.PayCompleteFragment"
         android:label="fragment_pay_complete"
-        tools:layout="@layout/fragment_pay_complete" />
+        tools:layout="@layout/fragment_pay_complete" >
+        <action
+            android:id="@+id/action_payCompleteFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+    </fragment>
     <argument android:name="accountNumber"
         android:defaultValue="None"/>
     <argument android:name="money"

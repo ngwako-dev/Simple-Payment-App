@@ -48,31 +48,18 @@ class PeopleFragment : Fragment() {
 
         listView.setOnItemClickListener{parent, view, position, id ->
 
-//
-
               val listItems =parent.getItemAtPosition(position) as String
               val name=listItems
 
             if (!TextUtils.isEmpty(listItems)){
-                val bundle= bundleOf("sendname" to name)
+                val bundle= bundleOf("sendName" to name)
 
                 navController.navigate(R.id.action_peopleFragment_to_payFragment,bundle)
             }
 
-
-//
-//              val intent = Intent(this.context,PayFragment::class.java)
-//              intent.putExtra("Name",name)
-//              startActivity(intent)
-           // Toast.makeText(this.context, "Click on item at $listItems its item id $listItems", Toast.LENGTH_LONG).show()
-
-
-
-
         }
 
     }
-
 
 }
 
