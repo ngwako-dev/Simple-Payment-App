@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="android.example.com.simplepaymentapp.HomeFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_firstFragment_to_viewBalancesFragment"
+            app:destination="@id/viewBalancesFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_peopleFragment"
+            app:destination="@id/peopleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewBalancesFragment"
+        android:name="android.example.com.simplepaymentapp.ViewBalancesFragment"
+        android:label="fragment_view_balances"
+        tools:layout="@layout/fragment_view_balances" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/peopleFragment"
+        android:name="android.example.com.simplepaymentapp.PeopleFragment"
+        android:label="fragment_people"
+        tools:layout="@layout/fragment_people" >
+        <argument android:name="sendname"
+            android:defaultValue="None"/>
+        <action
+            android:id="@+id/action_peopleFragment_to_payFragment"
+            app:destination="@id/payFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/payFragment"
+        android:name="android.example.com.simplepaymentapp.PayFragment"
+        android:label="fragment_pay"
+        tools:layout="@layout/fragment_pay" >
+        <action
+            android:id="@+id/action_payFragment_to_disclaimerFragment"
+            app:destination="@id/disclaimerFragment" />
+        <action
+            android:id="@+id/action_payFragment_to_payCompleteFragment"
+            app:destination="@id/payCompleteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/disclaimerFragment"
+        android:name="android.example.com.simplepaymentapp.DisclaimerFragment"
+        android:label="fragment_disclaimer"
+        tools:layout="@layout/fragment_disclaimer" />
+    <fragment
+        android:id="@+id/payCompleteFragment"
+        android:name="android.example.com.simplepaymentapp.PayCompleteFragment"
+        android:label="fragment_pay_complete"
+        tools:layout="@layout/fragment_pay_complete" >
+        <action
+            android:id="@+id/action_payCompleteFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+    </fragment>
+    <argument android:name="accountNumber"
+        android:defaultValue="None"/>
+    <argument android:name="money"
+        android:defaultValue="None"/>
+</navigation>
