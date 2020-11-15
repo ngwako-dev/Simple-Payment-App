@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/firstFragment"
         android:name="android.example.com.simplepaymentapp.HomeFragment"
-        android:label="fragment_first"
-        tools:layout="@layout/fragment_home" >
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_firstFragment_to_viewBalancesFragment"
             app:destination="@id/viewBalancesFragment" />
@@ -20,17 +20,18 @@
     <fragment
         android:id="@+id/viewBalancesFragment"
         android:name="android.example.com.simplepaymentapp.ViewBalancesFragment"
-        android:label="fragment_view_balances"
-        tools:layout="@layout/fragment_view_balances" >
+        android:label="View Balances"
+        tools:layout="@layout/fragment_view_balances">
 
     </fragment>
     <fragment
         android:id="@+id/peopleFragment"
         android:name="android.example.com.simplepaymentapp.PeopleFragment"
-        android:label="fragment_people"
-        tools:layout="@layout/fragment_people" >
-        <argument android:name="sendname"
-            android:defaultValue="None"/>
+        android:label="People"
+        tools:layout="@layout/fragment_people">
+        <argument
+            android:name="sendname"
+            android:defaultValue="None" />
         <action
             android:id="@+id/action_peopleFragment_to_payFragment"
             app:destination="@id/payFragment" />
@@ -38,8 +39,8 @@
     <fragment
         android:id="@+id/payFragment"
         android:name="android.example.com.simplepaymentapp.PayFragment"
-        android:label="fragment_pay"
-        tools:layout="@layout/fragment_pay" >
+        android:label="Pay"
+        tools:layout="@layout/fragment_pay">
         <action
             android:id="@+id/action_payFragment_to_disclaimerFragment"
             app:destination="@id/disclaimerFragment" />
@@ -50,13 +51,13 @@
     <fragment
         android:id="@+id/disclaimerFragment"
         android:name="android.example.com.simplepaymentapp.DisclaimerFragment"
-        android:label="fragment_disclaimer"
+        android:label="Disclaimer"
         tools:layout="@layout/fragment_disclaimer" />
     <fragment
         android:id="@+id/payCompleteFragment"
         android:name="android.example.com.simplepaymentapp.PayCompleteFragment"
-        android:label="fragment_pay_complete"
-        tools:layout="@layout/fragment_pay_complete" >
+        android:label="Pay Complete"
+        tools:layout="@layout/fragment_pay_complete">
         <action
             android:id="@+id/action_payCompleteFragment_to_firstFragment"
             app:destination="@id/firstFragment" />

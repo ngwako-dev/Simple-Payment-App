@@ -2,6 +2,9 @@ package android.example.com.simplepaymentapp
 
 import android.os.Bundle
 import android.text.TextUtils
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.view.View
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
@@ -14,6 +17,7 @@ class PayFragment: Fragment(R.layout.fragment_pay) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)//menu item is launched
         //the name is launched
         sendName= requireArguments().getString("sendName").toString()
     }
@@ -24,8 +28,18 @@ class PayFragment: Fragment(R.layout.fragment_pay) {
         val sendName = sendName
         val results = sendName
         resultsTextview.text = results
-        //parse data to payCompleteFragment if the condition is satisfied
-        nextButton.setOnClickListener {
+        //navigating to disclaimerFragment
+            disclaimerButton.setOnClickListener{
+                findNavController().navigate(R.id.action_payFragment_to_disclaimerFragment)
+        }
+    }
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+        inflater.inflate(R.menu.next, menu)
+    }
+    //parse data to payCompleteFragment if the condition is satisfied
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == R.id.action_next) {
             if (!TextUtils.isEmpty(("accountNumber" to accountNumberEdit.text.toString()).toString()) &&
                 !TextUtils.isEmpty(("money" to amountEditText.text.toString()).toString())
             ) {
@@ -36,12 +50,9 @@ class PayFragment: Fragment(R.layout.fragment_pay) {
                     "money" to amount
                 )
                 //data to parse in the bundle and would be parsed in payCompleteFragment
-                findNavController().navigate(R.id.action_payFragment_to_payCompleteFragment,bundle)
-            }
-            //navigating to disclaimerFragment
-            disclaimerButton.setOnClickListener{
-                findNavController().navigate(R.id.action_payFragment_to_disclaimerFragment)
+                findNavController().navigate(R.id.action_payFragment_to_payCompleteFragment, bundle)
             }
         }
+        return super.onOptionsItemSelected(item)
     }
 }

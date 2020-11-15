@@ -1,4 +1,4 @@
-#Wed Oct 28 13:26:44 SAST 2020
-base.0=/home/ngwako/AndroidStudioProjects/SimplePaymentApp/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+#Sun Nov 15 21:53:49 SAST 2020
+base.0=/Users/giftmoshobane/Documents/Developer/SimplePaymentApp/Simple-Payment-App/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
